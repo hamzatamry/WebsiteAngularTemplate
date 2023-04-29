@@ -1,0 +1,23 @@
+<div>
+  <h4 id="scrollspyHeading5">Pagination</h4>
+  <p>
+    Pagination, also known as paging, is the process of dividing a document into discrete pages, either electronic pages or printed pages.
+  </p>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item" style="margin-right: 10px;">
+          <a class="page-link page-link-1" aria-label="Previous" href="#" tabindex="-1" aria-disabled="true">
+            <span aria-hidden="true">«</span>
+          </a>
+        </li>
+        <li *ngFor="let page of pages" class="page-item" style="margin-right: 5px;">
+          <a class="page-link page-link-1" href="#">{{ page }}</a>
+        </li>
+        <li class="page-item " style="margin-left: 10px;">
+          <a aria-label="Next" href="" class="page-link page-link-1"><span aria-hidden="true">»</span></a>
+        </li>
+      </ul>
+    </nav>
+</div>
+

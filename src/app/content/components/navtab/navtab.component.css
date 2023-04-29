@@ -1,0 +1,78 @@
+.nav-tabs {
+    font-size: 1.275rem;
+    font-weight: 500;
+    line-height: 1.2;
+    border-bottom: 0px solid #F1EAE0;
+    margin-bottom: 30px;
+}
+
+.nav-tabs .nav-item {
+    color: black;
+    position: relative;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -3px;
+}
+
+.nav-tabs .nav-item .nav-link.active, .nav-tabs .nav-item .nav-link.active:hover, .nav-tabs .nav-item .nav-link.active:focus {
+    background-color: transparent;
+    border: 0 none;
+}
+.nav-tabs .nav-item .nav-link:hover, .nav-tabs .nav-item .nav-link.active {
+    color: black;
+}
+.nav-tabs-navigation .nav>.nav-item>.nav-link {
+    padding-bottom: 20px;
+}
+.nav-tabs .nav-item .nav-link {
+    border: 0 none;
+    color: #a49e93;
+    background-color: transparent;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #e6dede #dee2e6 #fff;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-item .nav-link.active:before, .nav-tabs .nav-item .nav-link.active:hover:before, .nav-tabs .nav-item .nav-link.active:focus:before {
+    border-bottom: 11px solid gray;
+    border-left: 11px solid rgba(0,0,0,0);
+    border-right: 11px solid rgba(0,0,0,0);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 40%;
+    bottom: -10px;
+}
+
+.nav-tabs .nav-item .nav-link.active:after, .nav-tabs .nav-item .nav-link.active:hover:after, .nav-tabs .nav-item .nav-link.active:focus:after {
+    border-bottom: 11px solid #FFFFFF;
+    border-left: 11px solid rgba(0,0,0,0);
+    border-right: 11px solid rgba(0,0,0,0);
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 40%;
+    bottom: 0;
+}
+
+.nav-tabs-navigation .nav>.nav-item>.nav-link {
+    padding-bottom: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+#p1, #p2, #p3 {
+    text-align: center;
+    font-size: 400;
+}

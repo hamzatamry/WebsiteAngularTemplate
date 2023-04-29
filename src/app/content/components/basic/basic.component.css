@@ -1,0 +1,33 @@
+.btn-primary {
+    background-color: #51cbce;
+    border-color: #51cbce;
+    color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.btn-default {
+    background-color: rgb(73, 79, 82);
+    border-color: rgb(108, 100, 89);
+    color: rgb(232, 230, 227);
+}
+
+.btn-outline-default {
+    border-color: rgb(108, 100, 89);
+    color: rgb(171, 164, 153);
+}
+
+i {
+    font-size: 1.5rem;
+    padding-right: 0.1rem;
+    color: #b0c4de;
+}
+.filled {
+    color: #1e90ff;
+}
+.low {
+    color: #deb0b0;
+}
+.filled.low {
+    color: #ff1e1e;
+}

@@ -1,0 +1,19 @@
+img {
+    width: 100% !important;
+    border-radius: 10px;
+}
+
+.card {
+    border: 0px transparent;
+    border-radius: 10px !important;
+}
+
+.card-body {
+    border: 0px transparent;
+    border-radius: 10px !important;
+}
+
+.visually-hidden {
+    height: 1px !important;
+    width: 1px !important;
+}

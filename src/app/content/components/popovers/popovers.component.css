@@ -1,0 +1,23 @@
+:host ::ng-deep .popover{
+    text-align: center !important;
+}
+
+:host ::ng-deep .popover-header {
+    background-color: white;
+    border-bottom: none;
+}
+
+:host ::ng-deep .popover-body {
+    padding-top: 2%;
+}
+
+.btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger:active, .btn-outline-danger.active, .open>.btn-outline-danger.dropdown-toggle {
+    background-color: #f5593d;
+    color: #fffc;
+    border-color: #f5593d;
+}
+
+.btn-round {
+    border-radius: 30px;
+    border: 2px solid #f5593d;
+}

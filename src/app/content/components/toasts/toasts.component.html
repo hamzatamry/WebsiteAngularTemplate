@@ -1,0 +1,44 @@
+<h4 id="scrollspyHeading10">Toasts</h4>
+<p>
+  Toast notifications often appear in the corner of a website that notifies the user with a message, which could represent a custom message.
+</p>
+<div>
+	<button class="btn btn-outline-success btn-round mr-2" (click)="show = true" style="margin-right: 10px;">On bottom left</button>
+	<button class="btn btn-outline-success btn-round mr-2" (click)="show2 = true">On bottom right</button>
+</div>
+
+
+<ngb-toast
+	id="toastBottomLeft"
+	*ngIf="show"
+	
+	header="You are offline"
+	[delay]="5000"
+	[autohide]="autohide"
+	(hide)="show = false; autohide = true"
+	
+>
+	<div>
+		Check you connexion status
+		<button type="button" class="btn btn-primary" (click)="reload();" style="border-radius: 50px; margin-right: 10px;">
+			<i class="bi bi-arrow-clockwise"></i>
+		</button>
+	</div>
+</ngb-toast>
+
+
+<ngb-toast
+	id="toastBottomRight"
+	*ngIf="show2"
+	header="You are offline"
+	[delay]="5000"
+	[autohide]="autohide"
+	(hide)="show2 = false; autohide = true"
+>
+	<div style="background-color: dark;">
+		Check you connexion status
+		<button type="button" class="btn btn-primary" (click)="reload()"style="border-radius: 50px; margin-right: 10px;">
+			<i class="bi bi-arrow-clockwise"></i>
+		</button>
+	</div>
+</ngb-toast>

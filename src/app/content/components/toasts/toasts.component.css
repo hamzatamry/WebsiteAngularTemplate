@@ -1,0 +1,30 @@
+#toastBottomLeft {
+    position: fixed;
+    top: auto!important;
+    bottom: 0!important;
+    right: auto!important;
+    left: 0!important;
+    margin: 0.5rem;
+    z-index: 1200;
+}
+
+#toastBottomRight {
+    position: fixed;
+    top: auto!important;
+    bottom: 0!important;
+    right: 0!important;
+    left: auto!important;
+    margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+    z-index: 1200;
+}
+
+.btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success:active, .btn-outline-success.active, .open>.btn-outline-success.dropdown-toggle {
+    background-color: #86d9ab!important;
+    color: #fffc;
+    border-color: #86d9ab!important;
+}
+
+.btn-round {
+    border-radius: 30px;
+    border: 2px solid #86d9ab!important;
+}

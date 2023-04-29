@@ -1,0 +1,30 @@
+<div>
+    <div>
+        <h4 id="scrollspyHeading6">Navigation Tabs</h4>
+        <p>
+            Tabbed navigation is a navigation and UI style where information is organized in tabs, which separate content into different sections
+        </p>
+    </div>
+    <ul ngbNav #nav="ngbNav" class="nav nav-tabs justify-content-center">
+        <li ngbNavItem>
+            <a ngbNavLink>Home</a>
+            <ng-template ngbNavContent>
+                <p id="p1">You've selected the home tab</p>
+            </ng-template>
+        </li>
+        <li ngbNavItem>
+            <a ngbNavLink>Profile</a>
+            <ng-template ngbNavContent>
+                <p id="p2">You've selected the profile tab</p>
+            </ng-template>
+        </li>
+        <li ngbNavItem>
+            <a ngbNavLink>Messages</a>
+            <ng-template ngbNavContent>
+                <p id="p3">You've selected the message tab</p>
+            </ng-template>
+        </li>
+    </ul>
+    
+    <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

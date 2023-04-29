@@ -1,0 +1,26 @@
+
+.bg-primary {
+    background-color: #6dd3d6 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;;
+}
+
+/* .bg-info {
+    background-color: #17a2b8 !important;
+} */
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+
+.navbar-expand-lg {
+    padding: 1rem;
+}
+
+.navbar-transparent {
+    background: transparent;
+    background-image: url('../../../../assets/antoine-barres.jpg');
+}
