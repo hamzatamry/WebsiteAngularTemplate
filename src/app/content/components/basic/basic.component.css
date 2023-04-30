@@ -1,33 +1,288 @@
-.btn-primary {
-    background-color: #51cbce;
-    border-color: #51cbce;
-    color: #fff;
-    opacity: 1;
-    filter: alpha(opacity=100);
+.btn-outline-primary {
+    border: 2px solid #0d6efd;
 }
 
-.btn-default {
-    background-color: rgb(73, 79, 82);
-    border-color: rgb(108, 100, 89);
-    color: rgb(232, 230, 227);
+.btn-outline-success {
+    border: 2px solid #44c47d;
 }
 
-.btn-outline-default {
-    border-color: rgb(108, 100, 89);
-    color: rgb(171, 164, 153);
+.btn-outline-light {
+    border: 2px solid #c6c7c8;
 }
 
-i {
-    font-size: 1.5rem;
+.btn-outline-dark {
+    border: 2px solid #212529;
+}
+
+.btn-outline-secondary {
+    border: 2px solid#5c636a;
+}
+
+.btn-outline-info {
+    border: 2px solid #31d2f2;
+}
+
+.btn-outline-warning {
+    border: 2px solid #fbc658;
+}
+
+.btn-outline-danger {
+    border: 2px solid #f5593d;
+}
+
+.btn-outline-info:hover, .btn-outline-warning:hover {
+    color: white;
+}
+
+.btn-info, .btn-warning {
+    color: white;
+}
+
+div.links a {
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.links a:hover {
+    text-underline-offset: 4px;   
+    text-decoration: solid underline blueviolet 2px;
+}
+
+.form-control:focus {
+    box-shadow: unset;
+    border: 1px solid #dee2e6;
+}
+
+/* Hide the default checkbox */
+.checkbox-container input {
+    display: none;
+  }
+  
+/* Style the container */
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #333;
+}
+  
+/* Style the checkmark */
+.checkbox-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #999;
+    border-radius: 3px;
+}
+  
+/* On hover, change the background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #eee;
+}
+  
+/* When the checkbox is checked, change the color of the checkmark */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #6bd098;
+    border-color: #6bd098;
+}
+
+/* Create the checkmark itself */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Show the checkmark when the checkbox is checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* Style the checkmark icon */
+.checkbox-container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+/* Hide the default radio button */
+.radio-container input {
+  display: none;
+}
+
+/* Style the container */
+.radio-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #333;
+}
+
+/* Style the checkmark */
+.radio-container .checkmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid purple;
+  border-radius: 50%;
+}
+
+/* On hover, change the background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the radio button is checked, change the color of the checkmark */
+.radio-container input:checked ~ .checkmark {
+  background-color: white;
+  border-color: rgb(211, 0, 211);
+}
+
+/* Create the checkmark itself */
+.radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when the radio button is checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark icon */
+.radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2.7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(211, 0, 211);
+}
+
+/* Style the switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 63px;
+    height: 34px;
+}
+  
+/* Hide the default checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+
+}
+  
+/* Style the slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 25px;
+}
+  
+  /* Style the slider when the checkbox is checked */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+  
+.switch input:checked + .slider {
+background-color: #2196F3;
+}
+
+.switch input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Style the on and off labels */
+.label-on, .label-off {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 12px;
+font-weight: bold;
+color: #fff;
+padding: 0px;
+}
+
+.label-on {
+left: 8px;
+}
+
+.label-off {
+right: 8px;
+}
+
+.switch input:checked + .slider + .label-on {
+display: block;
+}
+
+.switch input:checked + .slider + .label-off {
+display: none;
+}
+
+.bi-star-fill {
+    position: relative;
+    display: inline-block;
+    font-size: 2.2rem;
     padding-right: 0.1rem;
-    color: #b0c4de;
+    color: #d3d3d3;
 }
+
 .filled {
-    color: #1e90ff;
+    color: orange;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.low {
-    color: #deb0b0;
-}
-.filled.low {
-    color: #ff1e1e;
-}
+
+

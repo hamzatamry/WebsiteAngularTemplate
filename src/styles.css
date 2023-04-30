@@ -1,8 +1,51 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+html {
+    scroll-padding-top: 90px !important;
+}
+
+
 body {
-    -webkit-font-smoothing: antialiased;
+    color: #66615b;
+    font-size: 14px;
     font-family: Montserrat,Helvetica,Arial,sans-serif;
+}
+
+.dark-mode {
+    background-color: #202324;
+    color: white;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+    margin: 20px 0 0;
+}
+
+h2 {
     font-weight: 300;
 }
+
+h3 small {
+    font-size: 60%;
+}
+
+.btn {
+    margin-right: 3px;
+}
+
+.component-title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+}
+
+
+
+
 
 ngb-carousel div button[class=active] {
     background-color: #f5593d !important;

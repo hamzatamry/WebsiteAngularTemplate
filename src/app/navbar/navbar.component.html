@@ -1,4 +1,4 @@
-<nav id="navbar-example2" class="navbar navbar-expand-lg mt-0">
+<nav id="navbar-example2" class="navbar sticky-top navbar-expand-lg mt-0">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="../../../assets/2048px-Angular_full_color_logo.svg.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
@@ -15,11 +15,11 @@
         </li>
         
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" routerLink="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Components
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" router="#scrollspyHeading1">Basic Components</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading1">Basic Components</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#scrollspyHeading2">Menu</a></li>
             <li><hr class="dropdown-divider"></li>
@@ -46,17 +46,8 @@
             <li><a class="dropdown-item" href="#scrollspyHeading13">Tables</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Pages
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" routerLink="login">Login</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" routerLink="signup">Sign up</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#dashboard">Dashboard</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="login_signup">Login & Sign up</a>
         </li>
       </ul>
     </div>

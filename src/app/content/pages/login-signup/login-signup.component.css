@@ -1,0 +1,14 @@
+::placeholder { 
+    color: black;
+    opacity: 1; 
+}
+
+
+@media (min-width: 360px) and (max-width: 580px) { 
+    
+
+    .card {
+        margin: 4% !important;
+        margin-bottom: 0px !important;
+    }
+}

@@ -20,9 +20,9 @@ import { PopoversComponent } from './content/components/popovers/popovers.compon
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardsComponent } from './content/components/cards/cards.component';
 import { SlidersComponent } from './content/components/sliders/sliders.component';
-import { LoginComponent } from './content/pages/login/login.component';
-import { SignupComponent } from './content/pages/signup/signup.component';
 import { TablesComponent } from './content/components/tables/tables.component';
+import { LoginSignupComponent } from './content/pages/login-signup/login-signup.component';
+
 
 
  
@@ -45,9 +45,9 @@ import { TablesComponent } from './content/components/tables/tables.component';
     PopoversComponent,
     CardsComponent,
     SlidersComponent,
-    LoginComponent,
-    SignupComponent,
-    TablesComponent
+    TablesComponent,
+    LoginSignupComponent,
+
   ],
   imports: [
     BrowserModule,
