@@ -45,10 +45,14 @@ h3 small {
 
 
 
-
-
 ngb-carousel div button[class=active] {
     background-color: #f5593d !important;
+}
+
+div.carousel-indicators button[data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 
